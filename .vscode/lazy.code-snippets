@@ -1,0 +1,29 @@
+{
+	"Et. Cetera": {
+		"prefix": [
+			"meh.ts"
+		],
+		"body": [
+			"/* EXTERNAL */$1",
+			"/* INTERNAL */$2",
+			"/* -------- */\n",
+			"// TODO: $3",
+			"\n/* -EXPORT- */\n // export default init;",
+			"/* -------- */"
+		],
+		"description": "Using this snippet is a must for all .ts files."
+	},
+	".config files": {
+		"prefix": [
+			"meh.config"
+		],
+		"body": [
+			"/* EXTERNAL */$1",
+			"/* INTERNAL */\nimport mainConfig from './_.config';$2",
+			"/* -------- */\n\nmainConfig();\n\nconst config = {$3};",
+			"\n/* -EXPORT- */\nexport default config;",
+			"/* -------- */"
+		],
+		"description": "Using this snippet is a must for all .ts files."
+	}
+}
